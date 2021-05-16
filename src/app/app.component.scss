@@ -492,8 +492,10 @@ textarea.contactformtext{
         margin-top: 40px;
         padding-left: 50px;
         padding-right: 50px;
+        display: grid;
+        grid-template-columns: repeat(3, 1fr);
+        gap: 20px;
         z-index: 0;
-        display: flex;
         justify-content: space-around;
         flex-wrap: wrap;
     }
