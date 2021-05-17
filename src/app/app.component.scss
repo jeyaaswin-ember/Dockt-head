@@ -1138,7 +1138,7 @@ textarea.contactformtext{
     }
     .col2 ul li{
         list-style: none;
-        display: inline-block;
+        display: block;
         position: relative;
     }
     .col2 ul{
@@ -1149,11 +1149,5 @@ textarea.contactformtext{
         padding: 4px 5px;
         font-size: 25px;
     }
-    .col2 h1{
-        padding-top: 40px;
-        font-size: 13px;
-        color: black;
-        // padding-left: 35px;
-    }
-       
+     
 }
