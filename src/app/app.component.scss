@@ -3,48 +3,36 @@
     margin: 0;
     padding: 0;
 }
-
-body{
-    min-height: 100vh;
-}
-.nav-bar{
+header{
     background: linear-gradient(153.43deg, #00D2FF 0%, #3A7BD5 83.33%);
-    height: 100%;
+    min-height: 100vh;
     width: 100%;
-}
-.nav-bar .logo{
-    padding-left: 6em;
-    padding-top: 2em;
+    position: relative;
 }
 nav{
     display: flex;
-    padding: 2px 9px;
     justify-content: space-between;
+    padding: 2% 9%;
     align-items: center;
-    
 }
-.nav-links ul{
-    padding-right: 100px;
-    padding-bottom: 15px;
-    padding-top: 20px;
-} 
+.nav-links{
+    flex: 1;
+    text-align: right;
+}
 .nav-links ul li{
     list-style: none;
     display: inline-block;
     position: relative;
-    padding-right: 40px;
-    padding-top: 5px;
+    padding: 5px 12px;
 }
 .nav-links ul li a{
     text-decoration: none;
+    color: #fff;
     font-family: 'poppins', sans-serif;
-    color: white;
-    font-weight: 500;
     font-size: 16px;
-    line-height: 21px;
     transition: .5s;
 }
- nav ul li a:hover{
+nav ul li a:hover{
     color: #083049;
 }
 .banner{
@@ -57,14 +45,20 @@ nav{
     padding-left: 10%;
     padding-top: 12%;
 }
+.nav-bar .content h1{
+    font-size: 40px;
+}
 .nav-bar .content p{
     padding-top: 5%;
+    font-size: 16px;
 }
 .ourimg{
     padding-left: 14%;
     padding-top: 6%;
 }
-
+.herophn{
+    display: none;
+}
 .btn{
     padding: 5px 15px;
     font-family: 'poppins', sans-serif;
@@ -319,44 +313,30 @@ textarea.contactformtext{
 
 @media screen and (min-width: 1920px){
       
-    .nav-bar{
-        background: linear-gradient(153.43deg, #00D2FF 0%, #3A7BD5 83.33%);
-        height: 784px;
-        width: 100%;
-    }
-    nav .logo{
-        padding-left: 100px;
-        padding-top: 20px;
-    }
     nav{
         display: flex;
-        padding: 2px 9px;
         justify-content: space-between;
+        padding: 2% 9%;
         align-items: center;
-        
     }
-    .nav-links ul{
-        padding-right: 100px;
-        padding-bottom: 15px;
-        padding-top: 20px;
-    } 
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
     .nav-links ul li{
         list-style: none;
         display: inline-block;
         position: relative;
-        padding-right: 40px;
-        padding-top: 5px;
+        padding: 5px 12px;
     }
     .nav-links ul li a{
         text-decoration: none;
+        color: #fff;
         font-family: 'poppins', sans-serif;
-        color: white;
-        font-weight: 500;
         font-size: 16px;
-        line-height: 21px;
         transition: .5s;
     }
-     nav ul li a:hover{
+    nav ul li a:hover{
         color: #083049;
     }
     .banner{
@@ -366,16 +346,17 @@ textarea.contactformtext{
         font-family: 'poppins', sans-serif;
         float: left;
         color: white;
-        padding-left: 120px;
-        padding-top: 160px;
+        padding-left: 10%;
+        padding-top: 12%;
     }
     .nav-bar .content p{
-        padding-top: 15px;
+        padding-top: 5%;
     }
     .ourimg{
-        margin-left: 200px;
-        margin-top: 80px;
+        padding-left: 14%;
+        padding-top: 6%;
     }
+    
     .btn{
         padding: 5px 15px;
         font-family: 'poppins', sans-serif;
@@ -387,45 +368,8 @@ textarea.contactformtext{
         text-decoration: none;
         border-radius: 5px;
     }
-    
     .content .fa{
         padding-left: 4px;
-    }
-    .sidesocial h2{
-        font-family: 'poppins', sans-serif;
-        color: white;
-    }
-    .sidesocial{
-        display: flex;
-        padding: 2px 9px;
-        opacity: 50%;
-        padding-bottom: 10px;
-    }
-    .sidesocial .fa{
-        padding-right: 20px;
-        font-size: 20px;
-    }
-    .sidesocial h2{
-        font-size: 15px;
-    }
-    .social-icons ul{
-        padding-left: 30px;
-    }
-    .social-icons ul li{
-        list-style: none;
-        display: inline-block;
-        position: relative;
-        padding-right: 10px;
-        padding-top: 5px;
-    }
-    .social-icons ul li a{
-        text-decoration: none;
-        font-family: 'poppins', sans-serif;
-        color: white;
-        font-weight: 500;
-        font-size: 16px;
-        line-height: 21px;
-        transition: .5s;
     }
     .featurecont{
         font-family: 'poppins', sans-serif;
@@ -446,7 +390,7 @@ textarea.contactformtext{
         color: #2B9CE0;
         font-size: 16px;
     }
-    .cards{
+    cards{
         margin-top: 40px;
         padding-left: 50px;
         padding-right: 50px;
@@ -669,12 +613,334 @@ textarea.contactformtext{
 }
 /////////////////////////////////////////////////////////////////////////////////////////
 @media only screen and (max-width: 600px){
+    header{
+        background: linear-gradient(153.43deg, #00D2FF 0%, #3A7BD5 83.33%);
+        min-height: 100vh;
+        width: 100%;
+        position: relative;
+        padding-bottom: 15%;
+    }
+    nav{
+        display: flex;
+        justify-content: space-between;
+        padding: 2% 9%;
+        align-items: center;
+    }
+    .logo{
+        width: 70%;
+        height: 40%;
+        margin-left: -10px;
+        margin-top: 10%;
+    }
+    .nav-links{
+        flex: 1;
+        text-align: right;
+    }
+    .nav-links ul{
+        display: none;
+    }
+    .nav-links ul li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+        padding: 5px 12px;
+    }
+    .nav-links ul li a{
+        text-decoration: none;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        font-size: 16px;
+        transition: .5s;
+    }
+    nav ul li a:hover{
+        color: #083049;
+    }
+    .banner{
+        display: flex;
+    }
+    .nav-bar .content{
+        text-align: center;
+        font-family: 'poppins', sans-serif;
+        color: white;
+        padding-top: 20%;
+    }
+    .nav-bar .content h1{
+        font-size: 25px;
+    }
+    .nav-bar .content p{
+        padding-top: 5%;
+        font-size: 12px;
+    }
     .ourimg{
         display: none;
     }
-    .nav-bar .logo{
-        margin-right: 20%;
+    .herophn{
+        display: block;
+        margin-top: 20%;
+        padding-left: 8%;
     }
+    
+    .btn{
+        padding: 5px 15px;
+        font-family: 'poppins', sans-serif;
+        font-size: 10px;
+        font-weight: 300px;
+        text-align: center;
+        background: white;
+        color: #2B9CE0;
+        text-decoration: none;
+        border-radius: 5px;
+    }
+    .content .fa{
+        padding-left: 4px;
+    }
+    .featurecont{
+        font-family: 'poppins', sans-serif;
+        text-align: center;
+        padding-top: 74px;
+    }
+    .featurecont h1{
+        color: #F8EC7D;
+        font-size: 8px;
+        letter-spacing: 8px;
+    }
+    .featurecont h2{
+        font-size: 18px;
+        color: #2B9CE0;
+    
+    }
+    .featurecont p{
+        color: #2B9CE0;
+        font-size: 12px;
+    }
+    .cards{
+        margin-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        z-index: 0;
+        display: flex;
+        justify-content: space-around;
+        // flex-wrap: wrap;
+    }
+    .card-details{
+        margin: 30px auto;
+        width: 310px;
+        height: 350px;
+        box-shadow: 5px 5px 30px 7px rgba(0, 0, 0, 0.068), -5px -5px 30px 7px rgba(0, 0, 0, 0.048);
+        transition: 0.4s;
+        text-align: center;
+        font-family: 'poppins', sans-serif;
+    }
+    .card-details img{
+        width: 40%;
+        height: 30%;
+    }
+    .card-details h1{
+        font-size: 13px;
+    }
+    .card-details p{
+        font-size: 12px;
+        padding-top: 40px;
+        padding-left: 40px;
+        padding-right: 40px;
+    }
+    .pricing{
+        background: linear-gradient(153.43deg, #00D2FF 0%, #3A7BD5 83.33%);
+    }
+    .pricingcont{
+        font-family: 'poppins', sans-serif;
+        text-align: center;
+        padding-top: 74px;
+    }
+    .pricingcont h1{
+        color: #F8EC7D;
+        font-size: 8px;
+        letter-spacing: 8px;
+    }
+    .pricingcont h2{
+        padding-top: 10px;
+        font-size: 18px;
+        color: #fff;
+    
+    }
+    .pricingcont p{
+        color: #fff;
+        font-size: 16px;
+    }
+    
+    .pricingcards{
+        margin-top: 40px;
+        padding-left: 50px;
+        padding-right: 50px;
+        z-index: 0;
+        display: flex;
+        justify-content: space-around;
+        flex-wrap: wrap;
+    }
+    .pricecard-details:hover{
+        z-index: 1;
+        box-shadow: 1px 1px 1px 1px rgb(255 254 254 / 46%), -1px -1px 1px 1px rgb(255 251 251 / 66%);
+        transform: scale(1.07);
+    
+    }
+    .pricecard-details{
+        background:  linear-gradient(134.76deg, rgba(255, 255, 255, 0.4) 2%, rgba(255, 255, 255, 0.051) 97.6%);
+        margin: 30px auto;
+        width: 300px;
+        height: 380px;
+        border-radius: 20px;
+        box-shadow: 1px 1px 1px 1px rgb(255 254 254 / 46%), -1px -1px 1px 1px rgb(255 251 251 / 66%);
+        text-align: center;
+        color: #fff;
+        font-family: 'poppins', sans-serif;
+        transition: 0.1s all;
+    }
+    .divider{
+        height: 1px;
+        width: 80%;
+        margin-left: 35px;
+        background: rgba(255, 255, 255, 0.562);
+    }
+    .pricecard-details h1{
+        padding-top: 20px;
+        font-size: 25px;
+    }
+    .pricecard-details h2{
+        font-size: 27px;
+        padding-top: 20px;
+    }
+    .pricecard-details p{
+        font-size: 11px;
+        padding-top: 20px;
+        line-height: 16.5px;
+    }
+    .pricecard-details p .fa{
+        font-size: 12px;
+        padding-right: 10px;
+    }
+    
+    .btn-buy{
+        padding: 8px 64px;
+        background: white;
+        color: #2B9CE0;
+        font-size: 12px;
+        font-weight: bold;
+        text-decoration: none;
+        border-radius: 20px;
+    }
+    .pricing{
+        padding-bottom: 50px;
+    }
+    
+    .contactcont{
+        font-family: 'poppins', sans-serif;
+        text-align: center;
+        padding-top: 74px;
+    }
+    .contactcont h1{
+        color: #F8EC7D;
+        font-size: 8px;
+        letter-spacing: 8px;
+    }
+    .contactcont h2{
+        padding-top: 10px;
+        font-size: 18px;
+        color: #2B9CE0;
+    
+    }
+    .contactcont p{
+        color: #2B9CE0;
+        font-size: 12px;
+    }
+    
+    .contactform{
+        max-width: 800px;
+        margin: auto;
+        padding: 0 30px;
+        overflow: hidden;
+    }
+    .contactformtext{
+        display: block;
+        width: 100%;
+        box-sizing: border-box;
+        margin: 20px 0;
+        border-radius: 5px;
+        border: 0;
+        background: #DBEBF5;
+        padding: 14px 30px;
+        font-family: 'poppins', sans-serif;
+    }
+    textarea.contactformtext{
+        resize: none;
+        height: 120px;
+    }
+    .submit-btn{
+        margin-top: 10px;
+        // margin-left: 90px;
+        margin-left: 30%;
+        border: 0;
+        border-radius: 5px;
+        background: #2B9CE0;
+        font-family: 'poppins', sans-serif;
+        color: #fff;
+        font-size: 14px;
+        font-weight: 700px;
+        align-items: center;
+        cursor: pointer;
+        padding: 5px 15px;
+        transition: 0.2s all;
+    }
+    .submit-btn:hover{
+        transform: scale(1.05);
+    }
+    .contactus{
+        margin-bottom: 80px;
+    }
+    .footer{
+        background: linear-gradient(153.43deg, #00D2FF 0%, #3A7BD5 83.33%);
+        display: flex;
+        justify-content: space-between;
+        font-family: 'poppins', sans-serif;
+        color: #fff;
+        padding-bottom: 30px;
+    }
+    .col1{
+        padding-left: 5%;
+        margin-top: 20px;
+    }
+    .col1 img{
+        width: 70%;
+        height: 45%;
+    }
+    .col1 h2{
+        font-size: 8px;
+        font-weight: normal;
+        padding-left: 10px;
+    }
+    .col1 h3{
+        font-size: 9px;
+        font-weight: 500;
+        padding-left: 10px;
+    }
+    .col2 ul li{
+        list-style: none;
+        display: inline-block;
+        position: relative;
+    }
+    .col2 ul{
+        padding-right: 20px;
+    }
+    .col2 ul li .fa{
+        color: #fff;
+        padding: 4px 5px;
+        font-size: 14px;
+    }
+    .col2 h1{
+        padding-top: 20px;
+        font-size: 10px;
+        padding-left: 23px;
+    }
+    
 }
 
     
