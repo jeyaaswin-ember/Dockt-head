@@ -764,7 +764,7 @@ textarea.contactformtext {
 
   .nav-links {
     position: absolute;
-    top: 8%;
+    top: 6%;
     right: 4%;
     height: 20%;
     padding-top: 20px;
@@ -776,16 +776,16 @@ textarea.contactformtext {
     text-align: right;
   }
 
-  .nav-links::before {
-    content: '';
-    position: fixed;
-    top: 9%;
-    right: 10.5%;
-    width: 20px;
-    height: 20px;
-    background-color: #fff;
-    transform: rotate(45deg);
-  }
+  // .nav-links::after {
+  //   content: '';
+  //   position: fixed;
+  //   top: 9%;
+  //   right: 10.5%;
+  //   width: 20px;
+  //   height: 20px;
+  //   background-color: #fff;
+  //   transform: rotate(45deg);
+  // }
 
   .nav-links ul {
     display: block;
