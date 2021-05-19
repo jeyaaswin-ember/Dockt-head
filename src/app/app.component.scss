@@ -620,6 +620,7 @@ textarea.contactformtext{
         position: relative;
         padding-bottom: 15%;
     }
+    
     nav{
         display: flex;
         justify-content: space-between;
@@ -632,12 +633,54 @@ textarea.contactformtext{
         margin-left: -10px;
         margin-top: 10%;
     }
+    .menu-toggle{
+        // background: black;
+        position: absolute;
+        padding: 1em;
+        top: 2%;
+        right: 6%;
+        cursor: pointer;
+    }
+    .hamburger, .hamburger::before, .hamburger::after{
+        content: '';
+        display: block;
+        background: white;
+        height: 3px;
+        width: 1.3em;
+        border-radius: 3px;
+    }
+    .hamburger::before{
+        transform: translateY(-6px);
+    }
+    .hamburger::after{
+        transform: translateY(3px);
+    }
     .nav-links{
+        position: absolute;
+        top: 8%;
+        right: 4%;
+        height: 20%;
+        padding-top: 20px;
+        background-color: #fff;
+        overflow-x: hidden;
+        z-index: 2;
+        width: 150px;
         flex: 1;
         text-align: right;
     }
+    .nav-links::before{
+        content: '';
+        position: fixed;
+        top:9%;
+        right: 10.5%;
+        width: 20px;
+        height: 20px;
+        background-color: #fff;
+        transform: rotate(45deg);
+    }
     .nav-links ul{
-        display: none;
+        display: block;
+        text-align: center;
     }
     .nav-links ul li{
         list-style: none;
@@ -647,7 +690,7 @@ textarea.contactformtext{
     }
     .nav-links ul li a{
         text-decoration: none;
-        color: #fff;
+        color: #2B9CE0;
         font-family: 'poppins', sans-serif;
         font-size: 16px;
         transition: .5s;
@@ -659,24 +702,27 @@ textarea.contactformtext{
         display: flex;
     }
     .nav-bar .content{
+        margin-right: 8%;
         text-align: center;
         font-family: 'poppins', sans-serif;
         color: white;
-        padding-top: 20%;
+        padding-top: 25%;
     }
     .nav-bar .content h1{
-        font-size: 25px;
+        font-size: 28px;
     }
     .nav-bar .content p{
         padding-top: 5%;
-        font-size: 12px;
+        text-align: center;
+        font-size: 14px;
+        padding-right: 8%;
     }
     .ourimg{
         display: none;
     }
     .herophn{
         display: block;
-        margin-top: 20%;
+        margin-top: 10%;
         padding-left: 8%;
     }
     
