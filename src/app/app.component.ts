@@ -7,4 +7,9 @@ import { Component } from '@angular/core';
 })
 export class AppComponent {
   title = 'dockt';
+
+  ToggleNav() {
+    const nav = document.getElementById("navs");
+    nav?.classList.toggle("hide");
+  }
 }

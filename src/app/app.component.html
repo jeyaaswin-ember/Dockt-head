@@ -1,139 +1,154 @@
 <header id="home">
   <div class="nav-bar">
-      <nav>
-          <a href="#"><img class="logo" src="../assets/images/logo.png" alt="logo"></a>
-          <div class="nav-links">
-              <ul>
-                  <li><a href="#home">Home</a></li>
-                  <li><a href="#features">Features</a></li>
-                  <li><a href="#pricing">Pricing</a></li>
-                  <li><a href="#contactus">Contact Us</a></li>
-              </ul>
-          </div>
-      </nav>
-      <div class="menu-toggle">
-          <div class="hamburger"></div>
+    <nav>
+      <a href="#"><img class="logo" src="../assets/images/logo.png" alt="logo"></a>
+      <div class="nav-links hide" id="navs">
+        <ul>
+          <li><a href="#home">Home</a></li>
+          <li><a href="#features">Features</a></li>
+          <li><a href="#pricing">Pricing</a></li>
+          <li><a href="#contactus">Contact Us</a></li>
+        </ul>
       </div>
-  <div class="banner">
+    </nav>
+    <div (click)="ToggleNav()" class="menu-toggle">
+      <div class="hamburger"></div>
+    </div>
+    <div class="banner">
       <div class="content">
-          <h1>Best Billing Software<br> For Your<br> Best Bussiness</h1>
-          <p>Manage your complete business with DOCKT. Best<br>Software for billing, Inventory & Accounting.<br> Most Simple, Secure & Easy Software.</p>
-          <img class="herophn" src="../assets/images/herophn.png" alt=""> <br>
-          <a href="#" class="btn">Request Demo <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
+        <h1>Best Billing Software<br> For Your<br> Best Bussiness</h1>
+        <p>Manage your complete business with DOCKT. Best<br>Software for billing, Inventory & Accounting.<br> Most
+          Simple, Secure & Easy Software.</p>
+        <img class="herophn" src="../assets/images/herophn.png" alt=""> <br>
+        <a href="#" class="btn">Request Demo <i class="fa fa-long-arrow-right" aria-hidden="true"></i> </a>
       </div>
       <div class="ourimg">
-          <img src="../assets/images/ourimg.png" alt="">
+        <img src="../assets/images/ourimg.png" alt="">
       </div>
-  </div>
+    </div>
   </div>
 </header>
 <section class="features" id="features">
   <div class="featurecont">
-      <h1>FEATURES</h1>
-      <h2>Here is what you can expect</h2>
-      <p>We provide  a various types of features to enhance your Business <br> with our DOCKT.</p>
+    <h1>FEATURES</h1>
+    <h2>Here is what you can expect</h2>
+    <p>We provide a various types of features to enhance your Business <br> with our DOCKT.</p>
   </div>
   <div class="cards">
-      <div class="card-details">
-          <img src="../assets/images/card1.png" alt="">
-          <h1>Unlimited Products</h1>
-          <p>Lorem ipsum dolor sit amet,  eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum dissentiet, latine percipit ei ius. </p>
-      </div>
-      <div class="card-details">
-          <img src="../assets/images/card 2.png" alt="">
-          <h1>Responsive For <br> Desktop & Mobile</h1>
-          <p>Lorem ipsum dolor sit amet,  eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum dissentiet, latine percipit ei ius. </p>
-      </div>
-      <div class="card-details">
-          <img src="../assets/images/card3.png" alt="">
-          <h1>Unlimited invoices</h1>
-          <p>Lorem ipsum dolor sit amet,  eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum dissentiet, latine percipit ei ius. </p>
-      </div>
-      <div class="card-details">
-          <img src="../assets/images/card4.png" alt="">
-          <h1>Record And Track All Your <br> Transactions</h1>
-          <p>Lorem ipsum dolor sit amet,  eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum dissentiet, latine percipit ei ius. </p>
-      </div>
-      <div class="card-details">
-          <img src="../assets/images/card5.png" alt="">
-          <h1>Generate & Share <br> GST Reports</h1>
-          <p>Lorem ipsum dolor sit amet,  eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum dissentiet, latine percipit ei ius. </p>
-      </div>
-      <div class="card-details">
-          <img src="../assets/images/card6.png" alt="">
-          <h1>Also Available in <br> தமிழ் <br> Language </h1>
-          <p>Lorem ipsum dolor sit amet,  eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum dissentiet, latine percipit ei ius. </p>
-      </div>
+    <div class="card-details">
+      <img src="../assets/images/card1.png" alt="">
+      <h1>Unlimited Products</h1>
+      <p>Lorem ipsum dolor sit amet, eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum
+        dissentiet, latine percipit ei ius. </p>
+    </div>
+    <div class="card-details">
+      <img src="../assets/images/card 2.png" alt="">
+      <h1>Responsive For <br> Desktop & Mobile</h1>
+      <p>Lorem ipsum dolor sit amet, eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum
+        dissentiet, latine percipit ei ius. </p>
+    </div>
+    <div class="card-details">
+      <img src="../assets/images/card3.png" alt="">
+      <h1>Unlimited invoices</h1>
+      <p>Lorem ipsum dolor sit amet, eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum
+        dissentiet, latine percipit ei ius. </p>
+    </div>
+    <div class="card-details">
+      <img src="../assets/images/card4.png" alt="">
+      <h1>Record And Track All Your <br> Transactions</h1>
+      <p>Lorem ipsum dolor sit amet, eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum
+        dissentiet, latine percipit ei ius. </p>
+    </div>
+    <div class="card-details">
+      <img src="../assets/images/card5.png" alt="">
+      <h1>Generate & Share <br> GST Reports</h1>
+      <p>Lorem ipsum dolor sit amet, eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum
+        dissentiet, latine percipit ei ius. </p>
+    </div>
+    <div class="card-details">
+      <img src="../assets/images/card6.png" alt="">
+      <h1>Also Available in <br> தமிழ் <br> Language </h1>
+      <p>Lorem ipsum dolor sit amet, eam dicamfuisset eu, id vix ponderum accommodare. Ei has nominavi phaedrum
+        dissentiet, latine percipit ei ius. </p>
+    </div>
   </div>
 </section>
 <section class="pricing" id="pricing">
   <div class="pricingcont">
-      <h1>FEATURES</h1>
-      <h2>Simple and Transparent Pricing</h2>
-      <p>No contracts, No surprise fees</p>
+    <h1>FEATURES</h1>
+    <h2>Simple and Transparent Pricing</h2>
+    <p>No contracts, No surprise fees</p>
   </div>
   <div class="pricingcards">
-      <div class="pricecard-details">
-          <h1>BASE</h1>
-          <div class="divider"></div>
-          <h2><i class="fa fa-inr" aria-hidden="true"></i> 8,000</h2>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p> <br>
-          <a href="#" class="btn-buy">BUY NOW</a>
-      </div>
-      <div class="pricecard-details">
-          <h1>BUSSINESS</h1>
-          <div class="divider"></div>
-          <h2><i class="fa fa-inr" aria-hidden="true"></i> 10,000</h2>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p> <br>
-          <a href="#" class="btn-buy">BUY NOW</a>
-      </div>
-      <div class="pricecard-details">
-          <h1>ADVANCED</h1>
-          <div class="divider"></div>
-          <h2><i class="fa fa-inr" aria-hidden="true"></i> 12,000</h2>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
-          <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p> <br>
-          <a href="#" class="btn-buy">BUY NOW</a>
-      </div>
+    <div class="pricecard-details">
+      <h1>BASE</h1>
+      <div class="divider"></div>
+      <h2><i class="fa fa-inr" aria-hidden="true"></i> 8,000</h2>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p> <br>
+      <a href="#" class="btn-buy">BUY NOW</a>
+    </div>
+    <div class="pricecard-details">
+      <h1>BUSSINESS</h1>
+      <div class="divider"></div>
+      <h2><i class="fa fa-inr" aria-hidden="true"></i> 10,000</h2>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p> <br>
+      <a href="#" class="btn-buy">BUY NOW</a>
+    </div>
+    <div class="pricecard-details">
+      <h1>ADVANCED</h1>
+      <div class="divider"></div>
+      <h2><i class="fa fa-inr" aria-hidden="true"></i> 12,000</h2>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p>
+      <p><i class="fa fa-check-circle" aria-hidden="true"></i>Lorem ipsum dolor sit amet,</p> <br>
+      <a href="#" class="btn-buy">BUY NOW</a>
+    </div>
   </div>
 </section>
 <section class="contactus" id="contactus">
   <div class="contactcont">
-      <h1>CONTACT US</h1>
-      <h2>Get in Touch</h2>
-      <p>Please Fill out the quick form and we will be in touch with lightening speed.</p>
+    <h1>CONTACT US</h1>
+    <h2>Get in Touch</h2>
+    <p>Please Fill out the quick form and we will be in touch with lightening speed.</p>
   </div>
   <form class="contactform" action="index.html" method="post">
-      <input type="text" class="contactformtext" placeholder="Name">
-      <input type="text" class="contactformtext" placeholder="Your Email Address">
-      <textarea class="contactformtext" placeholder="Message"></textarea>
-      <input type="submit" class="submit-btn" value="send message">
+    <input type="text" class="contactformtext" placeholder="Name">
+    <input type="text" class="contactformtext" placeholder="Your Email Address">
+    <textarea class="contactformtext" placeholder="Message"></textarea>
+    <input type="submit" class="submit-btn" value="send message">
   </form>
 </section>
 <section class="footer">
   <div class="col1">
-      <img src="../assets/images/logo.png" alt="">
-      <h2>+91 88256 60438</h2>
-      <h3>companyname@gmail.com</h3>
+    <img src="../assets/images/logo.png" alt="">
+    <h2>+91 88256 60438</h2>
+    <h3>companyname@gmail.com</h3>
   </div>
   <div class="col2">
-      <h1>CONTACT</h1>
-          <ul>
-              <a href="#"><li><i class="fa fa-facebook-official" aria-hidden="true"></i></li></a>
-              <a href="#"><li><i class="fa fa-instagram" aria-hidden="true"></i></li></a>
-              <a href="#"><li><i class="fa fa-twitter-square" aria-hidden="true"></i></li></a>
-              <a href="#"><li><i class="fa fa-whatsapp" aria-hidden="true"></i></li></a>
-          </ul>
+    <h1>CONTACT</h1>
+    <ul>
+      <a href="#">
+        <li><i class="fa fa-facebook-official" aria-hidden="true"></i></li>
+      </a>
+      <a href="#">
+        <li><i class="fa fa-instagram" aria-hidden="true"></i></li>
+      </a>
+      <a href="#">
+        <li><i class="fa fa-twitter-square" aria-hidden="true"></i></li>
+      </a>
+      <a href="#">
+        <li><i class="fa fa-whatsapp" aria-hidden="true"></i></li>
+      </a>
+    </ul>
   </div>
 </section>
